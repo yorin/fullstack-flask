@@ -1,0 +1,22 @@
+{% extends "structure.html" %}
+
+{% block main %}
+
+        <h1 class="major">Login Page</h1>
+        <!--<span class="image fit"><img src="../static/images/pic04.jpg" alt="" /></span>
+        <p>Nothing yet much to say.</p>
+        <p>Nothing yet much to see.</p>-->
+        <p>{{message}}</p>
+        <form action=/login method="POST">
+            <p><input placeholder="Username" name="username" type="text" value=""></p>
+            <p><input placeholder="Password" name="password" type="password" value=""></p>
+            <br>
+            <a href ="/signup">If you have no account Signup here!!!</href>
+            <br><br>
+            <p><input type="submit"></p>
+        </form>
+    
+
+        
+
+{% endblock main %}

@@ -1,0 +1,33 @@
+{% extends "structure.html" %}
+
+{% block main %}
+
+<h1 class="major">portal</h1>
+<!--<span class="image fit"><img src="../static/images/pic04.jpg" alt="" /></span>
+<p>Nothing yet much to say.</p>
+<p>Nothing yet much to see.</p>-->
+<form action=/portal method="POST">
+    <p><input type="submit" value="update">&nbsp;<input type="submit" value="delete">&nbsp;<input type="submit" value="new"></p>
+    <table>
+        <thead>
+        <tr>
+            <th><input type="checkbox" id="select_all" name="select_all" value="select_all"><label for="vehicle1">Check All</label></th>
+            <th>Todo list</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for row in message %}
+                <tr>
+                    <td><input type="checkbox" id="select_all" name="select_all" value="select_all"><label for="vehicle1"></label></td>
+                    <td>{{row[2]}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+</form>
+
+<!--<p>{{message}}</p>-->
+
+
+{% endblock main %}
